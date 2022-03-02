@@ -1,0 +1,26 @@
+.items-comments {
+  .filters_comment {
+    margin-top: 2rem;
+    width: 100%;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #737373;
+    a {
+      font-size: 1rem;
+      color: #737373;
+      margin-right: 2rem;
+      position: relative;
+    }
+    .active {
+      color: #ff6700;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        top: 2.2rem;
+        left: 0;
+        height: 2px;
+        background-color: #ff6700;
+      }
+    }
+  }
+}

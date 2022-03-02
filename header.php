@@ -1,8 +1,7 @@
 <?php
 ob_start();
-if(!isset($_SESSION)) 
-    { 
-        session_start(); 
+if (!isset($_SESSION)) {
+    session_start();
 }
 require_once('includes/config.php');
 require_once('includes/dbhelper.php');
@@ -22,6 +21,7 @@ require_once('modules/function.php');
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/profile.css" />
     <link rel="stylesheet" type="text/css" href="css/reponsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/comments.css" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -52,8 +52,7 @@ require_once('modules/function.php');
                 </div>
             </div>
             <div class="search-box">
-                <input type="text" name="search-text" 
-                id="search-text" placeholder="Tìm kiếm" autocomplete="off" />
+                <input type="text" name="search-text" id="search-text" placeholder="Tìm kiếm" autocomplete="off" />
                 <button type="submit" id="btn-search">
                     <i class="far fa-search"></i>
                 </button>
@@ -79,7 +78,7 @@ require_once('modules/function.php');
                                     <ul>
                                         <li><a href="profile.php?users=<?php echo '' . $_SESSION['url'] . ''; ?>"><i class="fas fa-portrait"></i><?php echo '' . $_SESSION['fullname'] . ''; ?></a></li>
                                         <li><a href="posts-article.php?users=<?php echo '' . $_SESSION['url'] . ''; ?>"><i class="fas fa-edit"></i>Đăng bài viết</a></li>
-                                        <li><a href="posts-like.php?f=<?php echo''.$_SESSION['url'].''?>"><i class="fas fa-bookmark"></i>Bài viết đã lưu</a></li>
+                                        <li><a href="posts-like.php?f=<?php echo '' . $_SESSION['url'] . '' ?>"><i class="fas fa-bookmark"></i>Bài viết đã lưu</a></li>
                                         <li><a href="modules/logout.php"><i class="fas fa-power-off"></i>Đăng xuất</a></li>
                                     </ul>
                                 </nav>

@@ -25,9 +25,7 @@
                     </article>
                     <div class="content-user">
 
-                        <textarea value="" name="comment_textbox" 
-                        class="input comment_textbox" id="comments-ip"
-                        placeholder="Nhập bình luận ở đây"></textarea>
+                        <textarea value="" name="comment_textbox" class="input comment_textbox" id="comments-ip" placeholder="Nhập bình luận ở đây"></textarea>
                         <label id="error_status" class="error_code_all"></label>
                         <label id="notify_comment" class="notify_code_all"></label>
                         <div class="button_cm" id="button_cm">
@@ -93,6 +91,10 @@
                 </form>
             </div>
             <div class="items-comments">
+                <div class="filters_comment">
+                    <a class="active" href="javacript::">Quan tâm nhất</a>
+                    <a href="javacript::">Mới nhất</a>
+                </div>
                 <ul class="list-comments">
                 </ul>
             </div>

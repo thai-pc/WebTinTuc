@@ -163,14 +163,15 @@
     /*------------ popup image----------*/
 
     /*------------- popup error --------------------*/
-    let send = document.querySelector(".modal-send");
-    send.onclick = () => {
-        document.querySelector(".modal-error").classList.add("active");
-    };
-    let close = document.querySelector(".error-container .btn-close");
-    close.onclick = () => {
-        document.querySelector(".modal-error").classList.remove("active");
-    };
+    // let send = document.querySelector(".modal-send");
+    // console.log(send);
+    // send.onclick = () => {
+    //     document.querySelector(".modal-error").classList.add("active");
+    // };
+    // let close = document.querySelector(".error-container .btn-close");
+    // close.onclick = () => {
+    //     document.querySelector(".modal-error").classList.remove("active");
+    // };
 
     /*------------- popup error --------------------*/
 </script>
@@ -189,13 +190,13 @@
 <script type="text/javascript" src="js/comments.js"></script>
 <script src="https://cdn.tiny.cloud/1/rr96r87s7jfhlt1nbi280vkmm4l2uax02l8q99cxxr4gtnd8/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 <script type="text/javascript">
-     tinymce.init({
-      selector: '#Content',
-      plugins: 'a11ychecker advcode casechange export formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
-      toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter pageembed permanentpen table',
-      toolbar_mode: 'floating',
-      tinycomments_mode: 'embedded',
-      tinycomments_author: 'Author name',
+    tinymce.init({
+        selector: '#Content',
+        plugins: 'a11ychecker advcode casechange export formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
+        toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter pageembed permanentpen table',
+        toolbar_mode: 'floating',
+        tinycomments_mode: 'embedded',
+        tinycomments_author: 'Author name',
     });
 </script>
 </body>

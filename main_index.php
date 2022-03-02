@@ -11,15 +11,15 @@
       </a>
     </div>
     <div class="hot-main">
-    <?php
-        $rowperpage = 10;
-        $sql = "SELECT count(*) AS allcount FROM posts WHERE viewCount != 0";
-        $fetch = executeResult($sql);
-        $allcount = $fetch[0]['allcount'];
-        
-        $sql = "SELECT * FROM  posts WHERE viewCount != 0 ORDER BY viewCount DESC LIMIT 0, $rowperpage";
-        $posts = executeResult($sql);
-        $count = count($posts);
+      <?php
+      $rowperpage = 10;
+      $sql = "SELECT count(*) AS allcount FROM posts WHERE viewCount != 0";
+      $fetch = executeResult($sql);
+      $allcount = $fetch[0]['allcount'];
+
+      $sql = "SELECT * FROM  posts WHERE viewCount != 0 ORDER BY viewCount DESC LIMIT 0, $rowperpage";
+      $posts = executeResult($sql);
+      $count = count($posts);
       ?>
       <!-- hot main left -->
       <div class="hot-main-left">
@@ -80,8 +80,8 @@
               <nav class="nav-users">
                 <div class="users-info">
                   <?php
-                    $sql = "SELECT id_users,fullname, img_user FROM users WHERE id_users = '$users'";
-                    $users = executeResult($sql);
+                  $sql = "SELECT id_users,fullname, img_user FROM users WHERE id_users = '$users'";
+                  $users = executeResult($sql);
                   ?>
                   <?php foreach ($users as $us) { ?>
                     <a href="users.php?u=<?php echo '' . $us['id_users'] . ''; ?>">
@@ -115,10 +115,10 @@
         </div>
         <div class="container">
           <?php
-            $rowperpage = 14;
-            $sql = "SELECT * FROM  posts WHERE viewCount != 0 ORDER BY RAND() LIMIT 0, $rowperpage";
-            $posts = executeResult($sql);
-            $p = count($posts);
+          $rowperpage = 14;
+          $sql = "SELECT * FROM  posts WHERE viewCount != 0 ORDER BY RAND() LIMIT 0, $rowperpage";
+          $posts = executeResult($sql);
+          $p = count($posts);
           ?>
           <div class="hot-title-items active">
             <?php for ($i = 0; $i <= $p - 8; $i++) { ?>
@@ -171,12 +171,12 @@
     </div>
     </div>
     <div class="hot-main">
-    <?php
+      <?php
       $rowperpage = 9;
       $sql = "SELECT count(*) AS allcount FROM posts";
       $fetch = executeResult($sql);
       $allcount = $fetch[0]['allcount'];
-  
+
       $sql = "SELECT * FROM  posts ORDER BY created_at DESC LIMIT 0, $rowperpage";
       $posts = executeResult($sql);
       $count = count($posts);
@@ -221,8 +221,8 @@
 
   <section class="hot-list-container">
     <div class="hot-list-left" id="load_data_news">
-      
-      <?php for ($i = 4; $i <= $count - 1 ; $i++) {
+
+      <?php for ($i = 4; $i <= $count - 1; $i++) {
         $users = $posts[$i]['id_users'];
       ?>
         <article class="card-columns posts">
@@ -281,7 +281,7 @@
     </div>
     </div>
     <div class="hot-main">
-    <?php
+      <?php
       $rowperpage = 9;
       $sql = "SELECT count(*) AS allcount FROM posts WHERE id_category = 5";
       $fetch = executeResult($sql);
