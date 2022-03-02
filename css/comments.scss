@@ -12,6 +12,7 @@
     }
     .active {
       color: #ff6700;
+      font-weight: 700;
       &::after {
         content: '';
         position: absolute;

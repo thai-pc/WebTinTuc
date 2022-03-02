@@ -9,7 +9,8 @@
     margin-right: 2rem;
     position: relative; }
   .items-comments .filters_comment .active {
-    color: #ff6700; }
+    color: #ff6700;
+    font-weight: 700; }
     .items-comments .filters_comment .active::after {
       content: '';
       position: absolute;

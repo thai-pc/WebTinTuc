@@ -92,8 +92,8 @@
             </div>
             <div class="items-comments">
                 <div class="filters_comment">
-                    <a class="active" href="javacript::">Quan tâm nhất</a>
-                    <a href="javacript::">Mới nhất</a>
+                    <a class="active" href="javascript:;" rel="like">Quan tâm nhất</a>
+                    <a href="javascript:;" rel="time">Mới nhất</a>
                 </div>
                 <ul class="list-comments">
                 </ul>

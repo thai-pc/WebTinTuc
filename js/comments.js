@@ -73,4 +73,9 @@ $(document).ready(function () {
   AddComment();
 
   //Phần chuyển tabs fillter
+
+  $('.filters_comment a').click(function () {
+    $('.filters_comment a').removeClass('active');
+    $(this).addClass('active');
+  });
 });
