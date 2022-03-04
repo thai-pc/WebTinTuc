@@ -158,7 +158,7 @@ if (
                                     <span>' . $fullname . '</span>
                                 </a>
                             </div>
-                            <span class="time">'.facebook_time_ago($row['created_at']) .'</span>
+                            <span class="time">' . facebook_time_ago($row['created_at']) . '</span>
                         </nav>
                     </div>
                 </div>
@@ -322,6 +322,7 @@ if (
     } else {
         $output .= '<p style="margin: 2em 0em;">Không tìm thấy từ khóa trên</p>';
     }
+
     $output .= '<ul class="pagination">';
     $total_links = ceil($total_record / $limit); //Tổng số trang
     $previous_link = ''; //Trang trước

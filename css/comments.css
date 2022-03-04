@@ -19,5 +19,35 @@
       left: 0;
       height: 2px;
       background-color: #ff6700; }
+.items-comments .list-comments {
+  width: 100%;
+  padding-top: 1.6rem; }
+  .items-comments .list-comments .main-comments .box-content {
+    display: flex; }
+    .items-comments .list-comments .main-comments .box-content .users-img {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 0.5rem;
+      display: inline-block; }
+      .items-comments .list-comments .main-comments .box-content .users-img img {
+        border-radius: 50%; }
+    .items-comments .list-comments .main-comments .box-content .main-content {
+      width: calc(100% - 2.5rem);
+      display: inline-block;
+      background-color: aqua;
+      padding: 0.5rem;
+      border-radius: 1rem; }
+      .items-comments .list-comments .main-comments .box-content .main-content .full-name {
+        font-weight: bold; }
+  .items-comments .list-comments .main-comments .list-info-cm {
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: flex-end; }
+    .items-comments .list-comments .main-comments .list-info-cm .btn {
+      background: transparent;
+      margin-right: 2rem;
+      cursor: pointer; }
+    .items-comments .list-comments .main-comments .list-info-cm .times-cm {
+      font-size: 0.9rem; }
 
 /*# sourceMappingURL=comments.css.map */

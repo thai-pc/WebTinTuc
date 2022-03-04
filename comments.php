@@ -96,6 +96,22 @@
                     <a href="javascript:;" rel="time">Mới nhất</a>
                 </div>
                 <ul class="list-comments">
+                    <li class="main-comments">
+                        <div class="box-content">
+                            <div class="users-img"><img src="uploads/img-users/user1.jpg" alt="avatar"></div>
+                            <div class="main-content">
+                                <p class="full-name">Võ Đông Thái</p>
+                                <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            </div>
+                        </div>
+                        <div class="list-info-cm">
+                            <button class="btn btn-like"><i class="fas fa-thumbs-up"></i><span>17</span></button>
+                            <button class="btn btn-reply">
+                                Phản hồi
+                            </button>
+                            <span class="times-cm">7h trước</span>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
